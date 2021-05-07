@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`esprima utils getAll 1`] = `
+Array [
+  Program {
+    "body": Array [
+      ExpressionStatement {
+        "expression": CallExpression {
+          "arguments": Array [
+            BinaryExpression {
+              "left": Literal {
+                "raw": "6",
+                "type": "Literal",
+                "value": 6,
+              },
+              "operator": "+",
+              "right": Literal {
+                "raw": "8",
+                "type": "Literal",
+                "value": 8,
+              },
+              "type": "BinaryExpression",
+            },
+          ],
+          "callee": StaticMemberExpression {
+            "computed": false,
+            "object": Identifier {
+              "name": "console",
+              "type": "Identifier",
+            },
+            "property": Identifier {
+              "name": "log",
+              "type": "Identifier",
+            },
+            "type": "MemberExpression",
+          },
+          "type": "CallExpression",
+        },
+        "type": "ExpressionStatement",
+      },
+    ],
+    "sourceType": "script",
+    "type": "Program",
+  },
+  ExpressionStatement {
+    "expression": CallExpression {
+      "arguments": Array [
+        BinaryExpression {
+          "left": Literal {
+            "raw": "6",
+            "type": "Literal",
+            "value": 6,
+          },
+          "operator": "+",
+          "right": Literal {
+            "raw": "8",
+            "type": "Literal",
+            "value": 8,
+          },
+          "type": "BinaryExpression",
+        },
+      ],
+      "callee": StaticMemberExpression {
+        "computed": false,
+        "object": Identifier {
+          "name": "console",
+          "type": "Identifier",
+        },
+        "property": Identifier {
+          "name": "log",
+          "type": "Identifier",
+        },
+        "type": "MemberExpression",
+      },
+      "type": "CallExpression",
+    },
+    "type": "ExpressionStatement",
+  },
+  CallExpression {
+    "arguments": Array [
+      BinaryExpression {
+        "left": Literal {
+          "raw": "6",
+          "type": "Literal",
+          "value": 6,
+        },
+        "operator": "+",
+        "right": Literal {
+          "raw": "8",
+          "type": "Literal",
+          "value": 8,
+        },
+        "type": "BinaryExpression",
+      },
+    ],
+    "callee": StaticMemberExpression {
+      "computed": false,
+      "object": Identifier {
+        "name": "console",
+        "type": "Identifier",
+      },
+      "property": Identifier {
+        "name": "log",
+        "type": "Identifier",
+      },
+      "type": "MemberExpression",
+    },
+    "type": "CallExpression",
+  },
+  StaticMemberExpression {
+    "computed": false,
+    "object": Identifier {
+      "name": "console",
+      "type": "Identifier",
+    },
+    "property": Identifier {
+      "name": "log",
+      "type": "Identifier",
+    },
+    "type": "MemberExpression",
+  },
+  Identifier {
+    "name": "console",
+    "type": "Identifier",
+  },
+  Identifier {
+    "name": "log",
+    "type": "Identifier",
+  },
+  BinaryExpression {
+    "left": Literal {
+      "raw": "6",
+      "type": "Literal",
+      "value": 6,
+    },
+    "operator": "+",
+    "right": Literal {
+      "raw": "8",
+      "type": "Literal",
+      "value": 8,
+    },
+    "type": "BinaryExpression",
+  },
+  Literal {
+    "raw": "6",
+    "type": "Literal",
+    "value": 6,
+  },
+  Literal {
+    "raw": "8",
+    "type": "Literal",
+    "value": 8,
+  },
+]
+`;
+
+exports[`esprima utils getAll 2`] = `
+Array [
+  BinaryExpression {
+    "left": Literal {
+      "raw": "6",
+      "type": "Literal",
+      "value": 6,
+    },
+    "operator": "+",
+    "right": Literal {
+      "raw": "8",
+      "type": "Literal",
+      "value": 8,
+    },
+    "type": "BinaryExpression",
+  },
+]
+`;
+
+exports[`esprima utils getAll 3`] = `
+Array [
+  BinaryExpression {
+    "left": Literal {
+      "raw": "6",
+      "type": "Literal",
+      "value": 6,
+    },
+    "operator": "+",
+    "right": Literal {
+      "raw": "8",
+      "type": "Literal",
+      "value": 8,
+    },
+    "type": "BinaryExpression",
+  },
+]
+`;
+
+exports[`esprima utils getAllConsoleLogLastArgs 1`] = `
+Array [
+  BinaryExpression {
+    "left": Literal {
+      "raw": "6",
+      "type": "Literal",
+      "value": 6,
+    },
+    "operator": "+",
+    "right": Literal {
+      "raw": "8",
+      "type": "Literal",
+      "value": 8,
+    },
+    "type": "BinaryExpression",
+  },
+]
+`;
+
+exports[`esprima utils getNestedBinaryExpressions, 1`] = `
+Array [
+  BinaryExpression {
+    "left": Literal {
+      "raw": "6",
+      "type": "Literal",
+      "value": 6,
+    },
+    "operator": "+",
+    "right": Literal {
+      "raw": "8",
+      "type": "Literal",
+      "value": 8,
+    },
+    "type": "BinaryExpression",
+  },
+]
+`;
+
+exports[`esprima utils getNestedExpressions, 1`] = `Array []`;
+
+exports[`esprima utils getNestedExpressions, 2`] = `Array []`;
+
+exports[`esprima utils getNestedUnaryExpressions, 1`] = `Array []`;
