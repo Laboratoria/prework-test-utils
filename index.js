@@ -93,6 +93,10 @@ function stopStaticServer(server, cb) {
   });
 }
 
+function regExpEscape(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
 module.exports = {
   esprima: {
     getAll,
@@ -104,5 +108,6 @@ module.exports = {
   e2e: {
     initStaticServer,
     stopStaticServer,
+    regExpEscape,
   },
 };
