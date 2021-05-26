@@ -1,4 +1,6 @@
 const utils = require('esprima-ast-utils');
+const connect = require('connect');
+const serveStatic = require('serve-static');
 
 const handlers = {
   ConsoleLogExpressionStatement: (root) => (
@@ -75,6 +77,22 @@ function getNestedUnaryExpressions(nodeArr) {
   return getNestedExpressions(nodeArr, 'UnaryExpression');
 }
 
+function initStaticServer(folderPath, opts = {}, cb) {
+  let { port } = opts;
+  port = port || 5000;
+
+  return connect()
+    .use(serveStatic(folderPath))
+    .listen(port, cb);
+}
+
+function stopStaticServer(server, cb) {
+  server.close(cb);
+  setImmediate(() => {
+    server.emit('close');
+  });
+}
+
 module.exports = {
   esprima: {
     getAll,
@@ -82,5 +100,9 @@ module.exports = {
     getNestedExpressions,
     getNestedBinaryExpressions,
     getNestedUnaryExpressions,
+  },
+  e2e: {
+    initStaticServer,
+    stopStaticServer,
   },
 };
