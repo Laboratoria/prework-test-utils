@@ -1,15 +1,9 @@
 {
   "name": "@laboratoria/prework-test-utils",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "archy": "^1.0.0",
-    "cssauron": "^1.1.0",
-    "cssauron-falafel": "^1.2.1",
-    "through": "^2.3.8"
-  },
-  "peerDependencies": {
     "connect": "^3.7.0",
     "esprima-ast-utils": "^0.0.7",
     "serve-static": "^1.14.1"

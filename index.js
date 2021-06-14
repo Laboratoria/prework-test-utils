@@ -93,6 +93,7 @@ function stopStaticServer(server, cb) {
   });
 }
 
+// escape strings to be included as part of a regexp
 function regExpEscape(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
 }
